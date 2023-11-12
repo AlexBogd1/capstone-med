@@ -43,7 +43,6 @@ router.post('/register',[
     body('password', "Password Should Be At Least 8 Characters.").isLength({ min: 8 }),
     body('phone', "Phone Number Should Be 10 Digits.").isLength({ min: 10 }),
 ], async (req, res) => {
-
     const error = validationResult(req);
     if(!error.isEmpty()){
         return res.status(400).json({error: error.array()});

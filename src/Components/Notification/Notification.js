@@ -26,9 +26,9 @@ const Notification = ({ children }) => {
   }, []);
   return (
     <div>
-      <Navbar ></Navbar>
+      <Navbar />
       {children}
-      {true && (
+      {appointmentData && isLoggedIn && (
         <>
           <div className="appointment-card">
             <div className="appointment-card__content">

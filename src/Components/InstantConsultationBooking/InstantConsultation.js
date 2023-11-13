@@ -57,7 +57,7 @@ const InstantConsultation = () => {
         //     navigate("/login");
         // }
     }, [searchParams])
-
+console.log(filteredDoctors)
     return (
         <center>
             <div  className="searchpage-container">

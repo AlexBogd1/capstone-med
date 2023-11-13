@@ -4,14 +4,9 @@ import "reactjs-popup/dist/index.css";
 import "./DoctorCard.css";
 import AppointmentForm from "../AppointmentForm/AppointmentForm";
 import { v4 as uuidv4 } from "uuid";
+import Notification from "../Notification/Notification";
 
-const DoctorCard = ({
-  name,
-  speciality,
-  experience,
-  ratings,
-  profilePic,
-}) => {
+const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
   const [showModal, setShowModal] = useState(false);
   const [appointments, setAppointments] = useState([]);
 

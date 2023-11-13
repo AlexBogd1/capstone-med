@@ -10,18 +10,22 @@ import BookingConsultation from './Components/BookingConsultation';
 
 import logo from './logo.svg';
 import './App.css';
+import Notification from './Components/Notification/Notification';
 
 function App() {
   return (
     <div className="App">
      <BrowserRouter>
-       <Navbar />
+     <Notification>
+     <Navbar />
        <Routes>
        <Route path="/" element={<LandingPage/>}/>
        <Route path="/signup" element={<SignUp />}/>
        <Route path="/login" element={<Login />}/>
        <Route path="/instant-consultation" element={<BookingConsultation />} />
        </Routes>
+     </Notification>
+       
      </BrowserRouter>
     </div>
   );
